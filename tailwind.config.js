@@ -1,11 +1,10 @@
 
 module.exports = {
   mode: 'jit',
-  purge: {
-    enabled: process.env.NODE_ENV === 'production',
-    safeList: [],
-    content: ['./index.html', './src/**/*.tsx', './src/**/*.ts'],
-  },
+  content: [
+    './src/**/*.{js,ts,jsx,tsx}',
+    './public/index.html',
+  ],
   theme: {
     minWidth: {
       '40': '10rem',
